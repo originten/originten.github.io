@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>二十四节气</title>
+		<style type="text/css">
+			/*网页背景*/
+			body{
+				background-image: url(背景.png);
+				background-size: 100% 100%;
+				background-attachment: fixed;
+				}
+			html{
+				width: 100%;
+				height: 100%;
+			}
+			/*列表样式*/
+			ul{
+				list-style-type: none;
+			}
+			/*超链接样式*/
+			a{
+				text-decoration: none;
+			}
+			/*网页展示区域*/
+			#show{
+				margin-left: 320px;
+				margin-right: 320px;
+				margin-top: 100px;
+			}
+			/*主标题*/
+			#maintitle{
+				float: left;
+			}
+			#son1{
+				font-family: "中山行书百年纪念版";
+				font-size: 100px;
+				font-weight: bolder;
+				src:url("fonts/中山行书百年纪念版.ttf");
+			}
+			#son2{
+				font-family: "华文新魏";
+				font-size: 20px;
+				font-weight: bold;
+			}
+			#p1{
+				font-family: "华文行楷";
+				font-size: 20px;
+				color: gray;
+				float: right;
+			}
+			.clear{clear: both;}
+			/*导航栏*/
+			#mainnavi{
+				height: 50px;
+				background-color: unset;
+			}
+			.mainnavilist{
+				display: inline-block;
+				height: 50px;
+				line-height: 50px;
+			}
+			.mainnavilink{
+				color: black;
+				padding-left: 10px;
+				padding-right: 10px;
+				border-right: 1px solid black;
+				font-weight: 600;
+			}
+			.lastmainnavilink{
+				border-right: 0px;
+			}
+			/*网页头部*/
+			#header{
+				width: 860px;
+				height: 550px;
+				background-color: unset;
+			}
+			/*内容区*/
+			#content{
+				font-family: "华文新魏";
+				font-size: 20px;
+				font-weight: bold;
+			}
+			p{
+				text-indent: 40px;
+			}
+			.content-left,.content-right{
+				height: 700px;
+				background-color: unset;
+			}
+			.content-left{
+				float: left;
+				width: 403px;
+			}
+			.content-right{
+				float: right;
+				width: 403px;
+			}
+			.content-bottom{
+				width: 860px;
+				height: 550px;
+			}
+			.lmtable{
+				width: 100%;
+				height: 100%;
+			}
+			.lmtitle{
+				height: 30px;
+				width: 150px;
+				color: black;
+				padding-left: 5px;
+			}
+			#more{
+				background-color:unset;
+				color: white;
+			}
+			.lmtd{
+				border: 2px solid #05F0FA;
+			}
+			/*二十四节气*/
+			img{
+				width: 200px;
+				height: 300px;
+			}
+			.content-img{
+				width: 860px;
+			}
+			.picture{
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+			.rightpicture{
+				margin-right: 0px;
+			}
+			#div td{
+				text-align: center;
+			}
+			#div_p{cursor:pointer;}
+			.tablelink{
+				color: mediumpurple;
+			}
+			a:hover{color: skyblue;}
+			/*footer部分*/
+			.footerlist{
+				display: inline-block;
+			}
+			.footerlink{
+				padding-right: 15px;
+				padding-left: 12px;
+				color: black;
+			}
+			.firstfooterlink{
+				border-right: 1px solid black;
+			}
+			#footer{
+				background-color: unset;
+				color: gainsboro;
+				font-weight: bold;
+				text-align: center;
+				line-height: 25px;
+				height: 80px;
+				padding: 5px 0px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="show">
+			
+			<div id="maintitle">
+				<div id="son1">二十四节气</div>
+				<div id="son2">2016年11月30日，中国“二十四节气”正式列入联合国非遗名录</div>
+			</div>
+			<div id="p1">
+		下&nbsp;上&nbsp;最&nbsp;每&nbsp;冬&nbsp;秋&nbsp;夏&nbsp;春&nbsp;<br>
+		半&nbsp;半&nbsp;多&nbsp;月&nbsp;雪&nbsp;处&nbsp;满&nbsp;雨&nbsp;<br>
+		年&nbsp;年&nbsp;相&nbsp;两&nbsp;雪&nbsp;露&nbsp;芒&nbsp;惊&nbsp;<br>
+		是&nbsp;来&nbsp;差&nbsp;节&nbsp;冬&nbsp;秋&nbsp;夏&nbsp;春&nbsp;<br>
+		八&nbsp;六&nbsp;一&nbsp;不&nbsp;小&nbsp;寒&nbsp;暑&nbsp;清&nbsp;<br>
+		廿&nbsp;廿&nbsp;两&nbsp;变&nbsp;大&nbsp;霜&nbsp;相&nbsp;谷&nbsp;<br>
+		三&nbsp;一&nbsp;天&nbsp;更&nbsp;寒&nbsp;降&nbsp;连&nbsp;天&nbsp;
+			</div>
+			
+			<div class="clear"></div>
+			<div id="mainnavi">
+				<ul>
+					<li class="mainnavilist"><a href="#" class="mainnavilink">首页</a></li>
+					<li class="mainnavilist"><a href="#" class="mainnavilink">节气渊源</a></li>
+					<li class="mainnavilist"><a href="#" class="mainnavilink">节气划分</a></li>
+					<li class="mainnavilist"><a href="#" class="mainnavilink">民间习俗</a></li>
+					<li class="mainnavilist"><a href="#" class="mainnavilink">节气文化</a></li>
+					<li class="mainnavilist"><a href="#" class="mainnavilink">历史价值</a></li>
+					<li class="mainnavilist"><a href="#" class="mainnavilink">专题知识</a></li>
+					<li class="mainnavilist"><a href="#" class="mainnavilink lastmainnavilink">保护传承</a></li>
+				</ul>
+			</div>
+		
+		<div id="header">
+			<video controls="controls" width="860px">
+				<source src="二十四节气.mp4"/>
+				<object data="二十四节气.mp4" width="860px">
+					<embed src="二十四节气.mp4" width="860px">
+					您的浏览器不支持该视频播放
+				</object>
+			</video>
+		</div>
+		<div id="content">
+			<div class="content-left">
+				<table cellspacing="0" class="lmtable">
+					<tr>
+						<td class="lmtitle">二十四节气概述</td>
+						<td align="right"> MORE>></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="lmtd">
+							<div>
+								<p>二十四节气，是历法中表示自然节律变化以及确立“十二月建”的特定节令。一岁四时，春夏秋冬各三个月，每月两个节气，每个节气均有其独特的含义。廿四节气准确的反映了自然节律变化，在人们日常生活中发挥了极为重要的作用。它不仅是指导农耕生产的时节体系，更是包含有丰富民俗事象的民俗系统。廿四节气蕴含着悠久的文化内涵和历史积淀，是中华民族悠久历史文化的重要组成部分。 </p>
+								<p>“二十四节气”是上古农耕文明的产物，它是上古先民顺应农时，通过观察天体运行，认知一岁中时令、气候、物候等变化规律所形成的知识体系。廿四节气最初是依据斗转星移制定，北斗七星循环旋转，斗柄顺时针旋转一圈为一周期，谓之一“岁”（摄提）。现行的“二十四节气”是依据太阳在回归黄道上的位置制定，即把太阳周年运动轨迹划分为24等份，每15°为1等份，每1等份为一个节气，始于立春，终于大寒。 </p>
+								<p>经历史发展，农历吸收了干支历的节气成分作为历法补充，并通过“置闰法”调整使其符合回归年，形成阴阳合历，“二十四节气”也就成为了农历的一个重要部分。在国际气象界，二十四节气被誉为“中国的第五大发明”。2016年11月30日，二十四节气被正式列入联合国教育、科学及文化组织、人类非物质文化遗产代表作名录。</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="content-right">
+				<table cellspacing="0" class="lmtable">
+					<tr>
+						<td class="lmtitle">节气渊源</td>
+						<td align="right">MORE>></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="lmtd">
+							<div>
+								<p>中国的星象文化源远流长、博大精深，古人很早开始就探索宇宙的奥秘，并由此演绎出了一套完整深奥的观星文化。二十四节气原是依据北斗七星斗柄旋转指向（斗转星移）制定，北斗七星循环旋转，这斗转星移与季节变换有着密切的关系。北斗七星由天枢、天璇、天玑、天权、玉衡、开阳、摇光等七颗星星组成，因北斗七星曲折如斗，故而得名。北斗七星是北半球（中国位于北半球）的重要星象，北斗七星循环旋转，
+								斗转星移时北半球相应地域的自然节律亦在渐变，因此成为上古人们判断时节变化的依据。“二十四节气”是干支历中表示自然节律变化以及确立“十二月建”（月令）的特定节令，“十二月建”是依据“二十四节气”而来的节气月。干支历将一岁（摄提）划分为十二辰（十二月建、十二月令），以北斗星的运转计算月令，斗柄所指之辰谓之“斗建”（又称月建）。在传统文化中，干支时间和方位以及八卦是联系在一起的，寅位是
+								“后天八卦图”的艮位，是年终岁首交结的方位，代表终而又始，如《易·说卦传》：“艮，东北之卦也，万物之所成终而所成始也。”即，斗柄从正东偏北（寅位，后天八卦艮位）为起点，顺时针旋转一圈为一周期，谓之一“岁”（从立春到下一个立春为一岁）。寅月为“春正”，立春为岁首。立春乃万物起始、一切更生之义也。北斗星斗柄指向确立的二十四节气，始于立春，终于大寒，循环往复。</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+			<div class="content-bottom">
+				<table cellspacing="0" class="lmtable">
+					<tr>
+						<td class="lmtitle">历史价值</td>
+						<td align="right">MORE>></td>
+					</tr>
+					<tr >
+						<td colspan="2" class="lmtd">
+							<div>
+								<p>二十四节气是上古农耕文明的产物，它在中国传统农耕文化中占有极其重要的位置，其背后蕴含了中华民族悠久的文化内涵和历史积淀。二十四节气既是历代官府颁布的时间准绳，也是指导农业生产的指南针，日常生活中人们预知冷暖雪雨的指南针。二十四节气从古至今对人们的生活、文化有着实用价值。
+								二十四节气是对时间的具体切分，其更替和周期性复现，其中标志节气变化的节气日则是时间推迁和流转的标志性时间，是重要的阴阳转化节点。廿四节气与十二月建是干支历的基本内容，干支历以北斗星的斗柄所指为“建”，以“斗柄指寅”为春正（正月），其以春季第一个月为正月的历法制度对后世历法“建正”影响深远。
+								二十四节气准确反映了季节的变化并用于指导农事活动，影响着千家万户的衣食住行。作为农事活动的基本时间指针，二十四节气由此成为了民众年度时间生活的重要节点与时间坐标，在一定程度上成为民众日常社会生活的时间指针。</p>
+								<p>在早期观象授时时代，农事周期就是庆典周期，有些节气也就是节日。虽然此后由于在历史发展中阴阳合历历法的推广，节气与节日发生了分离，但许多节气仍旧被作为节日保留了下来。几乎每个节气也都有自己丰富多彩的节气习俗活动。这些活动，可大体归纳为如下几个方面：奉祀神灵，以应天时；崇宗敬祖，维护亲情；
+								除凶祛恶，以求平安；休闲娱乐，放松心情。此外，几乎每个节气也都有自己特殊的饮食习俗。遵循传统“天人合一，顺应四时”的理念，以二十四节气为中心，还形成了丰富的养生习俗，如立春补肝、立夏补水、立秋滋阴、立冬补阴等。与此同时，围绕二十四节气，亦产生了数量众多的故事传说以及诗词歌赋等，集中表达了人们的思想情感与精神寄托。
+								总之，围绕着二十四节气，形成了众多的信仰、禁忌、仪式、礼仪、娱乐、饮食、养生、传说、故事等习俗活动。因此，对人们来说，二十四节气不仅是一种时间体系，更是一套具有丰富内涵的生活与民俗系统。二十四节气之所以能在民众日常社会生活中日益流行与普及开来，与此有直接关系。</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div id="div_p" class="content-img">
+				<table id="table" cellspacing="0" class="lmtable">
+					<tr>
+						<td class="lmtitle">时节交替</td>
+						<td align="right">MORE>></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="lmtd">
+							<div id="div">
+							<table cellspacing="0px" cellpadding="0px">
+								<tr>
+									<td><img src="立春.jpg" alt="立春" title="2月3-5日" class="picture"/></td>
+									<td><img src="雨水.jfif" alt="雨水" title="2月18-20日" class="picture"/></td>
+									<td><img src="惊蛰.jpg" alt="惊蛰" title="3月5-7日" class="picture"/></td>
+									<td><img src="春分.jfif" alt="春分" title="3月20-21日" class="picture"/></td>
+								</tr>
+								<tr>
+									<td><a href="#" class="tablelink">乍暖还寒&nbsp;莫减衣裳</a></td>
+									<td><a href="#" class="tablelink">正月中&nbsp;春风送暖</a></td>
+									<td><a href="#" class="tablelink">春雷生&nbsp;万物长</a></td>
+									<td><a href="#" class="tablelink">春分到&nbsp;农事忙</a></td>
+								</tr>
+								<tr>
+									<td><img src="清明.jpg" alt="清明" title="4月4-6日" class="picture"/></td>
+									<td><img src="谷雨.jfif" alt="谷雨" title="4月19-21日" class="picture"/></td>
+									<td><img src="立夏.jfif" alt="立夏" title="5月5-7日" class="picture"/></td>
+									<td><img src="小满.png" alt="小满" title="5月20-22日" class="picture"/></td>
+								</tr>
+								<tr>
+									<td><a href="#" class="tablelink">冰雪融&nbsp;草木青</a></td>
+									<td><a href="#" class="tablelink">雨生百谷</a></td>
+									<td><a href="#" class="tablelink">立夏至&nbsp;春迟暮</a></td>
+									<td><a href="#" class="tablelink">物质于此小得盈满</a></td>
+								</tr>
+								<tr>
+									<td><img src="芒种.jfif" alt="芒种" title="6月5-7日" class="picture"/></td>
+									<td><img src="夏至.jfif" alt="夏至" title="6月21-22日" class="picture"/></td>
+									<td><img src="小暑.jpg" alt="小暑" title="7月6-8日" class="picture"/></td>
+									<td><img src="大暑.jfif" alt="大暑" title="7月22-24日" class="picture"/></td>
+								</tr>
+								<tr>
+									<td><a href="#" class="tablelink">芒之种谷可稼种矣</a></td>
+									<td><a href="#" class="tablelink">昼晷已云极&nbsp;宵漏自此长</a></td>
+									<td><a href="#" class="tablelink">小暑小禾黄</a></td>
+									<td><a href="#" class="tablelink">腐草为萤</a></td>
+								</tr>
+								<tr>
+									<td><img src="立秋.jfif" alt="立秋" title="8月7-9日" class="picture"/></td>
+									<td><img src="处暑.jfif" alt="处暑" title="8月22-24日" class="picture"/></td>
+									<td><img src="白露.jpg" alt="白露" title="9月7-9日" class="picture"/></td>
+									<td><img src="秋分.jfif" alt="秋分" title="9月22-25日" class="picture"/></td>
+								</tr>
+								<tr>
+									<td><a href="#" class="tablelink">暑去凉来&nbsp;落叶知秋</a></td>
+									<td><a href="#" class="tablelink">秋风送爽已觉迟</a></td>
+									<td><a href="#" class="tablelink">白露白迷迷&nbsp;秋分稻秀齐</a></td>
+									<td><a href="#" class="tablelink">昼夜均而寒暑平</a></td>
+								</tr>
+								<tr>
+									<td><img src="寒露.jfif" alt="寒露" title="10月8-9日" class="picture"/></td>
+									<td><img src="霜降.jfif" alt="霜降" title="10月23-24日" class="picture"/></td>
+									<td><img src="立冬.jfif" alt="立冬" title="11月7-8日" class="picture"/></td>
+									<td><img src="小雪.jpg" alt="小雪" title="11月22-23日" class="picture"/></td>
+								</tr>
+								<tr>
+									<td><a href="#" class="tablelink">天高昼暖夜来凉</a></td>
+									<td><a href="#" class="tablelink">枯草霜花白&nbsp;寒窗月新影</a></td>
+									<td><a href="#"class="tablelink">北风往复几寒凉</a></td>
+									<td><a href="#" class="tablelink">小雪晴沙不作泥</a></td>
+								</tr>
+								<tr>
+									<td><img src="大雪.jfif" alt="大雪" title="12月6-8日" class="picture"/></td>
+									<td><img src="冬至.jfif" alt="冬至" title="12月21-23日" class="picture"/></td>
+									<td><img src="小寒.jfif" alt="小寒" title="1月5-7日" class="picture"/></td>
+									<td><img src="大寒.jfif" alt="大寒" title="1月20-21日" class="picture"/></td>
+								</tr>
+								<tr>
+									<td><a href="#" class="tablelink">至此而雪盛也</a></td>
+									<td><a href="#" class="tablelink">冬至到&nbsp;一阳生</a></td>
+									<td><a href="#" class="tablelink">月初寒尚小</a></td>
+									<td><a href="#" class="tablelink">寒气之逆极</a></td>
+								</tr>
+							</table>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<ul>
+					<li class="footerlist"><a href="#" class="firstfooterlink footerlink">关于我们</a></li>
+					<li class="footerlist"><a href="#" class="footerlink">联系我们</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<div>
+				地址：内蒙古农业大学计算机与信息工程学院&nbsp;&nbsp;&nbsp;&nbsp;邮编：010100<br />
+				版权所有&copy;:内蒙古农业大学计算机与信息工程学院&nbsp;&nbsp;星辰
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
